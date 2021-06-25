@@ -594,7 +594,7 @@ function getIsvToken2() {
 
 function getToken() {
   let config = {
-    url: 'https://xinruimz-isv.isvjcloud.com/api/auth',
+    url: `https://xinruimz-isv.isvjcloud.com/api/auth?t=${Date.now()}`,
     body: JSON.stringify({"token":$.token2,"source":"01"}),
     headers: {
       'Host': 'xinruimz-isv.isvjcloud.com',
